@@ -90,8 +90,8 @@
 
                <div class="form-group">
                   <label for="description">Description</label>
-                  <textarea value="{!!$medicine_edit->description!!}" required  type="text" class="form-control" id="description" name="description" placeholder="Enter
-                  description" autocomplete="off">
+                  <textarea value="" required  type="text" class="form-control" id="description" name="description" placeholder="Enter
+                  description" autocomplete="off">{!!$medicine_edit->description!!}
                   </textarea>
                 </div>
 

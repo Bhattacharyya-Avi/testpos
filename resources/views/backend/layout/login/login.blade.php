@@ -10,15 +10,15 @@
     <!-- Bootstrap 3.3.7 -->
 
 
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{url('/css/bootstrap.min.css')}}">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{url('/css/font-awesome.min.css')}}">
     <!-- Ionicons -->
-    <link rel="stylesheet" href="/css/ionicons.min.css">
+    <link rel="stylesheet" href="{{url('/css/ionicons.min.css')}}">
     <!-- Theme style -->
-    <link rel="stylesheet" href="/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="{{url('/css/AdminLTE.min.css')}}">
     <!-- iCheck -->
-    <link rel="stylesheet" href="/css/blue.css">
+    <link rel="stylesheet" href="{{url('/css/blue.css')}}">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -102,11 +102,11 @@
 
     <!-- jQuery 3 -->
 
-    <script src="/js/jquery.min.js"></script>
+    <script src="{{url('/js/jquery.min.js')}}"></script>
     <!-- Bootstrap 3.3.7 -->
-    <script src="/js/bootstrap.min.js"></script>
+    <script src="{{url('/js/bootstrap.min.js')}}"></script>
     <!-- iCheck -->
-    <script src="/js/icheck.min.js"></script>
+    <script src="{{url('/js/icheck.min.js')}}"></script>
     <script>
         $(function () {
             $('input').iCheck({

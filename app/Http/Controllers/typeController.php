@@ -30,14 +30,13 @@ class typeController extends Controller
     }
 
     public function details($id){
-        $medicine=Medicine::where('type_id',$id)->get();
-        return view('backend.layout.type.type_details',compact('medicine'));
+        $type=Type::find($id);
+        return view('backend.layout.type.type_details',compact('type'));
         
     } 
     public function edit($id){
 
         $type=Type::find($id);
-        //dd($type);
         return view('backend.layout.type.edit_type',compact('type'));
     
     }

@@ -26,74 +26,60 @@
 
 
                 <a href="{{route('type')}}" class="btn btn-primary">Back</a>
+                <a href="{{route('type.edit',$type->id)}}" class="btn btn-info">Edit</a>
                 <br /> <br />
-         <div>
+                <div>
 
-            {{-- @if($errors->any())
+                    {{-- @if($errors->any())
             @foreach($errors->all() as $error)
                <div>
                    <p class="alert alert-danger">{{error}}</p>
-               </div>
-           @endforeach
-               
-          @endif
-               
-               @if(session()->has('msg'))
-           <p class="alert alert-success">{{session()->get('msg')}}</p>
-               @endif --}}
-
-         </div>
-
-         
-
-
-                <div class="box">
-                    <div class="box-header">
-                        <h3 class="box-title">Type Details</h3>
-                    </div>
-                    <!-- /.box-header -->
-                    <div class="box-body">
-                        <table id="userTable" class="table table-bordered table-striped">
-                            <thead>
-                                <tr>
-                                    <th>SL</th>
-                                    <th>Name</th>
-                                    
-                                </tr>
-                            </thead>
-
-
-                            <tbody>
-                                @foreach($medicine as $medicines)
-                                    <tr>
-                                        <td>{{ $loop->iteration}}</td>
-                                        <td>{{ $medicines->medicine_name}}</td>
-                                       
-                                        <td class="">
-                                            <a onclick="return confirm('Are you sure you want to delete this item?');" href="#"><i class="fa fa-close" style="font-size:24px"></i></a>
-                                            <a href="#"><i class="fa fa-pencil" style="font-size:24px"></i></a>
-
-                                          </td>
-
-
-                                    </tr>
-
-                                @endforeach 
-
-                            </tbody>
-                        </table>
-                    </div>
-                    <!-- /.box-body -->
                 </div>
-                <!-- /.box -->
+                @endforeach
+
+                @endif
+
+                @if(session()->has('msg'))
+                <p class="alert alert-success">{{session()->get('msg')}}</p>
+                @endif --}}
+
             </div>
-            <!-- col-md-12 -->
+            <div class="box">
+                <div class="box-header">
+                    <h3 class="box-title">Type Details</h3>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body">
+                    <form role="form" action="" method="post" id="createForm">
+                        @csrf
+                        <div class="form-group">
+                            <label for="brand_name">Medicine Type</label>
+                            <input type="text" class="form-control" id="category_name" name="medicine_type"
+                                placeholder="Enter medicine type" autocomplete="off" required=""
+                                value="{{$type->medicine_type}}">
+                        </div>
+                        <div class="form-group">
+                            <label for="active">Status</label>
+                            <select class="form-control" id="active" name="active">
+                                <option @if ($type->status == "Active")selected @endif value="Active">Active</option>
+                                <option @if ($type->status == "inactive")selected @endif value="inactive">Inactive
+                                </option>
+                            </select>
+                        </div>
+
+                    </form>
+                </div>
+                <!-- /.box-body -->
+            </div>
+            <!-- /.box -->
         </div>
-        <!-- /.row -->
+        <!-- col-md-12 -->
+</div>
+<!-- /.row -->
 
 
-    </section>
-    <!-- /.content -->
+</section>
+<!-- /.content -->
 </div>
 <!-- /.content-wrapper -->
 

@@ -21,7 +21,7 @@
         <!-- Small boxes (Stat box) -->
         <div class="row">
             <div class="col-md-12 col-xs-12">
-
+                <a href="{{route('type')}}" style="margin-bottom: 10px;" class="btn btn-primary">Back</a>
                 <div id="messages"></div>
 
               

@@ -1,20 +1,21 @@
 <?php
 
+use App\Http\Controllers\PaymentCon;
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\saleController;
+use App\Http\Controllers\typeController;
 use App\Http\Controllers\userController;
 use App\Http\Controllers\loginController;
-use App\Http\Controllers\customerController;
-use App\Http\Controllers\supplierController;
-use App\Http\Controllers\genericController;
-use App\Http\Controllers\medicineController;
 
-use App\Http\Controllers\typeController;
-
-use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\dashboardController;
-use App\Http\Controllers\purchaseController;
-use App\Http\Controllers\saleController;
 use App\Http\Controllers\stockController;
+
 use App\Http\Controllers\reportController;
+use App\Http\Controllers\genericController;
+use App\Http\Controllers\customerController;
+use App\Http\Controllers\medicineController;
+use App\Http\Controllers\purchaseController;
+use App\Http\Controllers\supplierController;
+use App\Http\Controllers\dashboardController;
 
 
 /*
@@ -68,6 +69,15 @@ Route::get('/customers/delete/{id}',[customerController::class,'delete'])->name(
 Route::get('/customer/edit/{id}',[customerController::class,'edit'])->name('customer.edit');
 Route::put('/customer/update/{id}',[customerController::class,'update'])->name('customer.update');
 //end customer
+
+//payment
+Route::get('/addpay/supplier/{id}',[PaymentCon::class,'addpay_supplier'])->name('addpay_supplier');
+Route::get('/addpay/customer/{id}',[PaymentCon::class,'addpay_customer'])->name('addpay_customer');
+Route::get('/payment/manage',[PaymentCon::class,'paymanage'])->name('paymanage');
+Route::get('/payment/manage/customer',[PaymentCon::class,'paymanage_customer'])->name('paymanage_customer');
+Route::post('/payments/supplier',[PaymentCon::class,'payments_supplier'])->name('payments_supplier');
+Route::post('/payments/custome',[PaymentCon::class,'payments_customer'])->name('payments_customer');
+//payment
 
 //start supplier
 Route::get('/suppliers',[supplierController::class,'supplier'])->name('suppler');

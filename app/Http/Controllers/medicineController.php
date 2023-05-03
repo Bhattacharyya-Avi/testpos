@@ -24,10 +24,9 @@ class medicineController extends Controller
         return view('backend.layout.medicine.managemedicine',compact('medicines'));
 
     }
-    public function medicinecreate(Request $s){
-        // dd($request->all());
+    public function medicinecreate(Request $request){
 
-        $s->validate([
+        $request->validate([
             'image'=>'required',
             'medicine_name'=>'required',
             'sale_price'=>'required|numeric',
@@ -39,20 +38,20 @@ class medicineController extends Controller
         ]);
 
         $filename = '';
-        if ($s->hasFile('image')) {
-            $file = $s->file('image');
+        if ($request->hasFile('image')) {
+            $file =  $request->file('image');
             $filename = date('Ymdhms').'.'.$file->getclientOriginalExtension();
-            $file->storeAs('/uploads',$filename);
+            // $file->storeAs('/uploads',$filename);
+            $file->move(public_path('/uploads'),$filename);
         }
-
         Medicine::create([
             'image'=>$filename,
-            'medicine_name'=>$s->medicine_name,
-            'sale_price'=>$s->sale_price,
-            'description'=>$s->description,
-            'type_id'=>$s->type,
-            'generic_id'=>$s->generic,
-            'availability'=>$s->availability
+            'medicine_name'=> $request->medicine_name,
+            'sale_price'=> $request->sale_price,
+            'description'=> $request->description,
+            'type_id'=> $request->type,
+            'generic_id'=> $request->generic,
+            'availability'=> $request->availability
         ]);
         return redirect()->route('medicine.manage')->with('message','Medicine create successfully');
     }

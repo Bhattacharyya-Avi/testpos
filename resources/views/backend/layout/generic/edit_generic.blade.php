@@ -8,11 +8,11 @@
     <section class="content-header">
         <h1>
             Manage
-            <small>Medicine Generic</small>
+            <small>Product Generic</small>
         </h1>
         <ol class="breadcrumb">
             <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li class="active">Medicine Generic</li>
+            <li class="active">Product Generic</li>
         </ol>
     </section>
 
@@ -59,9 +59,9 @@
                       <div class="modal-body">
       
                           <div class="form-group">
-                              <label for="brand_name">Medicine Generic</label>
+                              <label for="brand_name">Product Generic</label>
                               <input value="{{$generic->generic_name}}" type="text" class="form-control" id="category_name" name="generic_name"
-                                  placeholder="Enter medicine generic" autocomplete="off" required="">
+                                  placeholder="Enter Product generic" autocomplete="off" required="">
                           </div>
                           <div class="form-group">
                               <label for="active">Status</label>

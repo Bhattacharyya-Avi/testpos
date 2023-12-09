@@ -8,11 +8,11 @@
     <section class="content-header">
         <h1>
             Manage
-            <small>Medicine Type</small>
+            <small>Product Type</small>
         </h1>
         <ol class="breadcrumb">
             <li><a href="{{route('dashboard')}}"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li class="active">Medicine Type</li>
+            <li class="active">Product Type</li>
         </ol>
     </section>
 
@@ -25,7 +25,7 @@
                 <div id="messages"></div>
 
 
-                <button class="btn btn-primary" data-toggle="modal" data-target="#addModal">Add Medicine type</button>
+                <button class="btn btn-primary" data-toggle="modal" data-target="#addModal">Add Product type</button>
                 <br /> <br />
 
                 <div>
@@ -51,7 +51,7 @@
 
                 <div class="box">
                     <div class="box-header">
-                        <h3 class="box-title">Manage Medicine Type</h3>
+                        <h3 class="box-title">Manage Product Type</h3>
                     </div>
 
 
@@ -62,7 +62,7 @@
                             <thead>
 
                                 <tr>
-                                    <th>Medicine Type</th>
+                                    <th>Product Type</th>
                                     <th>Status</th>
                                     <th>Action</th>
                                 </tr>
@@ -110,7 +110,7 @@
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                         aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title">Add Medicine Type</h4>
+                <h4 class="modal-title">Add Product Type</h4>
             </div>
 
             <form role="form" action="{{route('type.create')}}" method="post" id="createForm">
@@ -118,7 +118,7 @@
                 <div class="modal-body">
 
                     <div class="form-group">
-                        <label for="brand_name">Medicine Type</label>
+                        <label for="brand_name">Product Type</label>
                         <input type="text" class="form-control" id="category_name" name="medicine_type"
                             placeholder="Enter medicine type" autocomplete="off" required="">
                     </div>

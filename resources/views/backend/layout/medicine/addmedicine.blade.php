@@ -13,11 +13,11 @@
   <section class="content-header">
     <h1>
       Manage
-      <small>Medicines</small>
+      <small>Product</small>
     </h1>
     <ol class="breadcrumb">
       <li><a href="{{route('dashboard')}}"><i class="fa fa-dashboard"></i> Home</a></li>
-      <li class="active">Medicines</li>
+      <li class="active">Product</li>
     </ol>
   </section>
 
@@ -33,7 +33,7 @@
 
         <div class="box">
           <div class="box-header">
-            <h3 class="box-title">Add Medicine</h3>
+            <h3 class="box-title">Add Product</h3>
           </div>
 
           <div>
@@ -73,8 +73,8 @@
                
 
                 <div class="form-group">
-                  <label for="medicine_name">Medicine name</label>
-                  <input required name="medicine_name" type="text" class="form-control" id="medicine_name"  placeholder="Enter medicine name" autocomplete="off"/>
+                  <label for="medicine_name">Product name</label>
+                  <input required name="medicine_name" type="text" class="form-control" id="medicine_name"  placeholder="Enter Product name" autocomplete="off"/>
                 </div>
 
 
@@ -100,7 +100,7 @@
 
 
                 <div class="form-group">
-                  <label for="category">Medicine Type</label>
+                  <label for="category">Product Type</label>
                   <select class="form-control select_group" id="type" name="type" required="">
                     @foreach ($medicine_type as $add)
 

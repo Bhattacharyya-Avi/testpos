@@ -21,29 +21,29 @@
 
             <li id="categoryNav">
                 <a href="{{route('type')}}">
-                    <i class="fa fa-files-o"></i> <span>Medicine Type</span>
+                    <i class="fa fa-files-o"></i> <span>Product Type</span>
                 </a>
             </li>
 
             <li id="categoryNav">
                 <a href="{{route('generic')}}">
-                    <i class="fa fa-files-o"></i> <span>Medicine Generic</span>
+                    <i class="fa fa-files-o"></i> <span>Product Generic</span>
                 </a>
             </li>
 
             <li class="treeview" id="">
                 <a href="#">
                     <i class="fa fa-medkit"></i>
-                    <span>Medicines</span>
+                    <span>Product</span>
                     <span class="pull-right-container">
                         <i class="fa fa-angle-left pull-right"></i>
                     </span>
                 </a>
                 <ul class="treeview-menu">
                     <li id="addMedicineNav"><a href="{{route('medicine')}}"><i class="fa fa-circle-o"></i>
-                            Add Medicines</a></li>
+                            Add Product</a></li>
                     <li id="manageMedicinNav"><a href="{{route('medicine.manage')}}"><i class="fa fa-circle-o"></i>
-                            Manage Medicines</a></li>
+                            Manage Product</a></li>
                 </ul>
             </li>
 
@@ -230,28 +230,28 @@
             <li class="treeview" id="">
                 <a href="#">
                     <i class="fa fa-medkit"></i>
-                    <span>Medicines</span>
+                    <span>Product</span>
                     <span class="pull-right-container">
                         <i class="fa fa-angle-left pull-right"></i>
                     </span>
                 </a>
                 <ul class="treeview-menu">
                     <li id="addMedicineNav"><a href="{{route('medicine')}}"><i class="fa fa-circle-o"></i>
-                            Add Medicines</a></li>
+                            Add Product</a></li>
                     <li id="manageMedicinNav"><a href="{{route('medicine.manage')}}"><i class="fa fa-circle-o"></i>
-                            Manage Medicines</a></li>
+                            Manage Product</a></li>
                 </ul>
             </li>
 
             <li id="categoryNav">
                 <a href="{{route('type')}}">
-                    <i class="fa fa-files-o"></i> <span>Medicine Type</span>
+                    <i class="fa fa-files-o"></i> <span>Product Type</span>
                 </a>
             </li>
 
             <li id="categoryNav">
                 <a href="{{route('generic')}}">
-                    <i class="fa fa-files-o"></i> <span>Medicine Generic</span>
+                    <i class="fa fa-files-o"></i> <span>Product Generic</span>
                 </a>
             </li>
 
@@ -400,28 +400,28 @@
             <li class="treeview" id="">
                 <a href="#">
                     <i class="fa fa-medkit"></i>
-                    <span>Medicines</span>
+                    <span>Product</span>
                     <span class="pull-right-container">
                         <i class="fa fa-angle-left pull-right"></i>
                     </span>
                 </a>
                 <ul class="treeview-menu">
                     <li id="addMedicineNav"><a href="{{route('medicine')}}"><i class="fa fa-circle-o"></i>
-                            Add Medicines</a></li>
+                            Add Product</a></li>
                     <li id="manageMedicinNav"><a href="{{route('medicine.manage')}}"><i class="fa fa-circle-o"></i>
-                            Manage Medicines</a></li>
+                            Manage Product</a></li>
                 </ul>
             </li>
 
             <li id="categoryNav">
                 <a href="{{route('type')}}">
-                    <i class="fa fa-files-o"></i> <span>Medicine Type</span>
+                    <i class="fa fa-files-o"></i> <span>Product Type</span>
                 </a>
             </li>
 
             <li id="categoryNav">
                 <a href="{{route('generic')}}">
-                    <i class="fa fa-files-o"></i> <span>Medicine Generic</span>
+                    <i class="fa fa-files-o"></i> <span>Product Generic</span>
                 </a>
             </li>
 

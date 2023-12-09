@@ -7,11 +7,11 @@
     <section class="content-header">
       <h1>
         Manage
-        <small>Medicines</small>
+        <small>Product</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">Medicines</li>
+        <li class="active">Product</li>
       </ol>
     </section>
 
@@ -24,7 +24,7 @@
           <div id="messages"></div>
 
 
-           <a href="{{route('medicine')}}" class="btn btn-primary">Add Medicine</a>
+           <a href="{{route('medicine')}}" class="btn btn-primary">Add Product</a>
             <br /> <br />
             <div>
 
@@ -47,7 +47,7 @@
 
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Manage Medicines</h3>
+              <h3 class="box-title">Manage Product</h3>
             </div>
             <br /> <br />
 
@@ -59,11 +59,11 @@
                 <tr>
                     <th>SL</th>
                     <th>Image</th>
-                  <th>Medicine Name</th>
+                  <th>Product Name</th>
                   <th>Sell Price</th>
                   <th>Description</th>
-                  <th>Medicine Type</th>
-                  <th>Medicine Generic</th>
+                  <th>Product Type</th>
+                  <th>Product Generic</th>
                    <th>Availability</th>
                   <th>Action</th>
                   </tr>

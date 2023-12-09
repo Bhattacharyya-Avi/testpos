@@ -9,7 +9,7 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
         <h1>
-            Medicine
+            Product
             <small>Type Details</small>
         </h1>
         <ol class="breadcrumb">
@@ -53,7 +53,7 @@
                     <form role="form" action="" method="post" id="createForm">
                         @csrf
                         <div class="form-group">
-                            <label for="brand_name">Medicine Type</label>
+                            <label for="brand_name">Product Type</label>
                             <input type="text" class="form-control" id="category_name" name="medicine_type"
                                 placeholder="Enter medicine type" autocomplete="off" required=""
                                 value="{{$type->medicine_type}}">

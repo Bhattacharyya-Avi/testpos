@@ -4,7 +4,7 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
         <h1>
-            Medicine Sale
+            Product Sale
         </h1>
         <ol class="breadcrumb">
             <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
@@ -55,7 +55,7 @@
 
 
                                     <div class="form-group">
-                                        <label for="product_name">Medicine name</label>
+                                        <label for="product_name">Product name</label>
                                         <select type="text" class="form-control select_group" id="medicine_name"
                                             name="medicine_name" placeholder="Enter medicine name" autocomplete="off">
                                             

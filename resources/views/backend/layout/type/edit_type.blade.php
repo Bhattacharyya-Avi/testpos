@@ -8,11 +8,11 @@
     <section class="content-header">
         <h1>
             Manage
-            <small>Medicine Type</small>
+            <small>Product Type</small>
         </h1>
         <ol class="breadcrumb">
             <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li class="active">Medicine Type</li>
+            <li class="active">Product Type</li>
         </ol>
     </section>
 
@@ -59,7 +59,7 @@
                       <div class="modal-body">
       
                           <div class="form-group">
-                              <label for="brand_name">Medicine Type</label>
+                              <label for="brand_name">Product Type</label>
                               <input value="{{$type->medicine_type}}" type="text" class="form-control" id="category_name" name="medicine_type"
                                   placeholder="Enter medicine type" autocomplete="off" required="">
                           </div>

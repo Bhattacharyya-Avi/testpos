@@ -63,7 +63,7 @@
                     <div class="inner">
                         <p><h3>{{$medicine}}</h3></p>
 
-                        <p>Total Medicine</p>
+                        <p>Total Product</p>
                     </div>
                     <div class="icon">
                         <i class="ion ion-bag"></i>
